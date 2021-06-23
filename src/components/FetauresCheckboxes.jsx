@@ -1,6 +1,6 @@
 import Checkbox from "./Checkbox";
 
-function Checkboxes({ children, ...props }) {
+function FeaturesCheckboxes({ children, ...props }) {
   return (
     // <!-- This is a checkboxes group -->
     <ul {...props}>
@@ -24,4 +24,4 @@ function Checkboxes({ children, ...props }) {
   );
 }
 
-export default Checkboxes;
+export default FeaturesCheckboxes;

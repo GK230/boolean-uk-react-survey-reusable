@@ -1,4 +1,4 @@
-import Checkboxes from "./Checkboxes";
+import Checkboxes from "./FetauresCheckboxes";
 
 function Form() {
   return (
