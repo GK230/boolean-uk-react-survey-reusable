@@ -1,4 +1,5 @@
 import Checkboxes from "./FetauresCheckboxes";
+import RadioButtons from "./RadioButtons";
 
 function Form() {
   return (
@@ -19,14 +20,17 @@ function Form() {
       <div className="form__group radio">
         <h3>How do you rate your rubber duck consistency?</h3>
         {/* <!-- radio buttons go here --> */}
+        <RadioButtons name="consistency" />
       </div>
       <div className="form__group radio">
         <h3>How do you rate your rubber duck colour?</h3>
         {/* <!-- Radio inputs go here --> */}
+        <RadioButtons name="colour" />
       </div>
       <div className="form__group radio">
         <h3>How do you rate your rubber duck logo?</h3>
         {/* <!-- radio inputs go here --> */}
+        <RadioButtons name="logo" />
       </div>
       <div className="form__group">
         <h3>How do you like to spend time with your rubber duck</h3>
@@ -45,7 +49,7 @@ function Form() {
         <input type="email" name="email" value="" />
       </label>
       <input
-        classNameName="form__submit"
+        className="form__submit"
         type="submit"
         value="Submit Survey!"
       />

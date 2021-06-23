@@ -1,22 +1,22 @@
-function RadioButtons({children, ...props}) {
+function RadioButtons({children, name, ...props}) {
   return (
     // <!-- This is a radio buttons group -->
-    <ul>
+    <ul {...props}>
       <li>
-        <input id="consistency1" type="radio" name="consistency" value="1" />
-        <label for="consistency1">1</label>
+        <input id={`${name=name}1`} type="radio" name={name} value="1" />
+        <label htmlFor={`${name=name}1`}>1</label>
       </li>
       <li>
-        <input id="consistency2" type="radio" name="consistency" value="2" />
-        <label for="consistency2">2</label>
+        <input id={`${name=name}2`} type="radio" name={name} value="2" />
+        <label htmlFor={`${name=name}2`}>2</label>
       </li>
       <li>
-        <input id="consistency3" type="radio" name="consistency" value="3" />
-        <label for="consistency3">3</label>
+        <input id={`${name=name}3`} type="radio" name={name} value="3" />
+        <label htmlFor={`${name=name}3`}>3</label>
       </li>
       <li>
-        <input id="consistency4" type="radio" name="consistency" value="4" />
-        <label for="consistency4">4</label>
+        <input id={`${name=name}4`} type="radio" name={name} value="4" />
+        <label htmlFor={`${name=name}4`}>4</label>
       </li>
     </ul>
   );
