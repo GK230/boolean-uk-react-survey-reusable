@@ -1,6 +1,14 @@
 import Checkboxes from "./FetauresCheckboxes";
 import RadioButtons from "./RadioButtons";
 
+function handleChange(event) {
+    const chosenFeatures = []
+    let isChecked = event.target.checked;
+    chosenFeatures.push(isChecked.value)
+    console.log(chosenFeatures)
+
+}
+
 function Form() {
   return (
     <form className="form">
@@ -10,7 +18,7 @@ function Form() {
           What would you say that are the best features of your rubber duck?
         </h3>
         {/* <!-- checkboxes go here --> */}
-        <Checkboxes name={"bestFeatures"} />
+        <Checkboxes name={"bestFeatures"} onChange={handleChange}/>
       </div>
       <div className="form__group">
         <h3>What would you say that are the worst bits of your rubber duck?</h3>
