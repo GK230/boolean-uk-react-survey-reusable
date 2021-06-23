@@ -1,3 +1,5 @@
+import Checkboxes from "./Checkboxes";
+
 function Form() {
   return (
     <form className="form">
@@ -7,10 +9,12 @@ function Form() {
           What would you say that are the best features of your rubber duck?
         </h3>
         {/* <!-- checkboxes go here --> */}
+        <Checkboxes name={"bestFeatures"} />
       </div>
       <div className="form__group">
         <h3>What would you say that are the worst bits of your rubber duck?</h3>
         {/* <!-- Checkboxes go here --> */}
+        <Checkboxes name={"worstFeatures"} />
       </div>
       <div className="form__group radio">
         <h3>How do you rate your rubber duck consistency?</h3>
@@ -40,9 +44,13 @@ function Form() {
         Leave us your email pretty please??
         <input type="email" name="email" value="" />
       </label>
-      <input classNameName="form__submit" type="submit" value="Submit Survey!" />
+      <input
+        classNameName="form__submit"
+        type="submit"
+        value="Submit Survey!"
+      />
     </form>
   );
 }
 
-export default Form
+export default Form;
