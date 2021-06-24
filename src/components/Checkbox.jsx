@@ -1,7 +1,7 @@
-function Checkbox({ children, handleChange, ...props }) {
+function Checkbox({ children, handleChange, value, ...props }) {
   return (
     <label>
-      <input {...props} name="bestFeatures" type="checkbox" value="colour" onChange={handleChange}/>
+      <input {...props} name={name} type="checkbox" value={value} onChange={handleChange}/>
       {children}
     </label>
   );

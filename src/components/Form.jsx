@@ -3,11 +3,16 @@ import RadioButtons from "./RadioButtons";
 
 function handleChange(event) {
     const chosenFeatures = []
-    let isChecked = event.target.checked;
-    chosenFeatures.push(isChecked.value)
+
+    let isChecked = event.target.value;
+    chosenFeatures.push(isChecked)
     console.log(chosenFeatures)
 
+
 }
+
+
+
 
 function Form() {
   return (
